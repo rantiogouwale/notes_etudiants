@@ -12,3 +12,12 @@ total = sum(e['note'] for e in etudiants)
 moyenne= total / len(etudiants)
 print(f"Moyenne de la classe : {moyenne:.2f}")
 return moyenne
+
+def afficher_notes():
+if not etudiants:
+
+print("Aucun etudiant.")
+return
+
+for e in etudiants:
+print(f"- {e['nom']} :{e['note']}/20"}
